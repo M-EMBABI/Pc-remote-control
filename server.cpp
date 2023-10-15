@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <cstring>
 
-ServerHandler::ServerHandler() : socket_fd(-1), client_socket_fd(-1) {}
+ServerHandler::ServerHandler()  {}
 
 ServerHandler::~ServerHandler() {
     if (socket_fd != -1) {
