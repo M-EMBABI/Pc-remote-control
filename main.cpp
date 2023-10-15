@@ -28,7 +28,7 @@ int main() {
 
             while (true) {
                 buf = server.server_read();
-                std::cout << buf << std::endl;
+               
 
                 if (buf == "exit\n") {
                     server.server_send_msg("Exiting the server...\n");
@@ -38,7 +38,7 @@ int main() {
                 }
 
                 buf = executor.execute_command(buf);
-                std::cout <<"buf : " << buf << std::endl;
+               
                 server.server_send_msg(buf);
                 
             }
